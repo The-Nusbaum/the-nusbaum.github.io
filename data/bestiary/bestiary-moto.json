@@ -1,0 +1,902 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MonstersoftheOrient",
+				"abbreviation": "MOTO",
+				"full": "Monsters of the Orient",
+				"url": "https://www.dmsguild.com/product/187283/Heroes-of-the-Orient-Players-and-DMs-Companion",
+				"authors": [
+					"Marc Altfuldisch"
+				],
+				"convertedBy": [
+					"The-Nusbaum"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Blademaster",
+			"size": "M",
+			"type": "humanoid",
+			"source": "MonstersoftheOrient",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "17d8 + 51",
+				"average": 4
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 16,
+			"con": 17,
+			"int": 11,
+			"wis": 16,
+			"cha": 18,
+			"passive": 17,
+			"cr": "9",
+			"profSave": {
+				"dex": 1,
+				"cha": 1
+			},
+			"profSkill": {
+				"athletics": 1,
+				"perception": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"passivePerception": true,
+				"hpAverageSimple": true
+			},
+			"activeTabInput": 5,
+			"activeTabOutput": 2,
+			"profBonus": 4,
+			"languages": [
+				"Oriental (Common and High)"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"athletics": "+7",
+				"perception": "+7"
+			},
+			"ixBrew": 3,
+			"trait": [
+				{
+					"name": "Blink Strike",
+					"entries": [
+						"Once on each of its turns, when attacking with its nodachi, the blademaster can teleport up to 30 feet right before making the attack. The blademaster makes its next attack with advantage, and deals an additional 21 ({@dice 6d6}) with that attack if it connects."
+					]
+				},
+				{
+					"name": "Grace",
+					"entries": [
+						"The kensai cannot suffer from disadvantage when attacking with its nodachi."
+					]
+				},
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"While the blademaster is wearing no armor and wielding no shield, its",
+						"AC includes its Charisma modifier."
+					]
+				},
+				{
+					"name": "Weapon Bond",
+					"entries": [
+						"The blademaster can summon its Nodachi into its hand using a bonus action. The blademaster can’t be disarmed of its Nodachi unless {@condition incapacitated}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The blademaster attacks three times with its nodachi."
+					]
+				},
+				{
+					"name": "Nodachi",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"group": "NPCs",
+			"environment": [
+				"urban"
+			],
+			"tokenUrl": "https://the-nusbaum.github.io/img/MotO/blademaster.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://the-nusbaum.github.io/img/MotO/blademaster.png"
+						}
+					}
+				]
+			},
+			"isNpc": true
+		},
+		{
+			"name": "Samurai",
+			"size": "M",
+			"type": "humanoid",
+			"source": "MonstersoftheOrient",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Lamellar"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 46
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 15,
+			"passive": 11,
+			"cr": "2",
+			"profSave": {
+				"dex": 1
+			},
+			"profSkill": {
+				"athletics": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"passivePerception": true,
+				"hpAverageSimple": false
+			},
+			"activeTabInput": 5,
+			"activeTabOutput": 2,
+			"profBonus": 2,
+			"languages": [
+				"Oriental (Common and High)"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+3",
+				"cha": "+6"
+			},
+			"skill": {
+				"athletics": "+4"
+			},
+			"ixBrew": 4,
+			"trait": [
+				{
+					"name": "Clash (1/turn)",
+					"entries": [
+						"The samurai deals an additional 9 ({@damage 2d8}) force damage with a successful",
+						"attack."
+					]
+				},
+				{
+					"name": "Grace",
+					"entries": [
+						"The kensai cannot suffer from disadvantage when attacking with its nodachi."
+					]
+				},
+				{
+					"name": "Weapon Bond",
+					"entries": [
+						"The Samurai can summon its Nodachi into its hand using a bonus action. The blademaster can’t be disarmed of its Nodachi unless {@condition incapacitated}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Samurai attacks two times with its nodachi."
+					]
+				},
+				{
+					"name": "Nodachi",
+					"entries": [
+						"{@atk mw} {@hit +6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Hankyu",
+					"entries": [
+						"{@atk rw} {@hit +3} to hit, range 82/320 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"group": "NPCs",
+			"environment": [
+				"urban"
+			],
+			"tokenUrl": "https://the-nusbaum.github.io/img/MotO/samurai.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://the-nusbaum.github.io/img/MotO/samurai.png"
+						}
+					}
+				]
+			},
+			"page": 153,
+			"isNpc": true
+		},
+		{
+			"name": "Samurai, Heron Clan",
+			"size": "M",
+			"type": "humanoid",
+			"source": "MonstersoftheOrient",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Lamellar"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 15,
+			"passive": 11,
+			"cr": "3",
+			"profSave": {
+				"dex": 1
+			},
+			"profSkill": {
+				"athletics": 1,
+				"insight": 1,
+				"persuasion": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"passivePerception": true,
+				"hpAverageSimple": false
+			},
+			"activeTabInput": 5,
+			"activeTabOutput": 2,
+			"profBonus": 2,
+			"languages": [
+				"Oriental (Common and High)"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+3",
+				"cha": "+6"
+			},
+			"skill": {
+				"athletics": "+4",
+				"insight": "+3",
+				"persuasion": "+4"
+			},
+			"ixBrew": 4,
+			"trait": [
+				{
+					"name": "Clash (1/turn)",
+					"entries": [
+						"The samurai deals an additional 9 ({@damage 2d8}) force damage with a successful",
+						"attack."
+					]
+				},
+				{
+					"name": "Grace",
+					"entries": [
+						"The kensai cannot suffer from disadvantage when attacking with its nodachi."
+					]
+				},
+				{
+					"name": "Weapon Bond",
+					"entries": [
+						"The Samurai can summon its Nodachi into its hand using a bonus action. The blademaster can’t be disarmed of its Nodachi unless {@condition incapacitated}"
+					]
+				},
+				{
+					"name": "Heron Stance",
+					"entries": [
+						"The samurai can take the Dash or Dodge actions as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Samurai attacks two times with its nodachi."
+					]
+				},
+				{
+					"name": "Nodachi",
+					"entries": [
+						"{@atk mw} {@hit +6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Hankyu",
+					"entries": [
+						"{@atk rw} {@hit +3} to hit, range 82/320 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"group": "NPCs",
+			"environment": [
+				"urban"
+			],
+			"tokenUrl": "https://the-nusbaum.github.io/img/MotO/samurai-heron.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://the-nusbaum.github.io/img/MotO/samurai-heron.png"
+						}
+					}
+				]
+			},
+			"page": 153,
+			"isNpc": true
+		},
+		{
+			"name": "Shinobi",
+			"size": "M",
+			"type": "humanoid",
+			"source": "MonstersoftheOrient",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "17d8 + 51",
+				"average": 127
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 13,
+			"dex": 19,
+			"con": 16,
+			"int": 12,
+			"wis": 17,
+			"cha": 18,
+			"passive": 17,
+			"cr": "9",
+			"profSave": {
+				"dex": 1,
+				"cha": 1
+			},
+			"profSkill": {
+				"perception": 1,
+				"acrobatics": 2
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"passivePerception": true,
+				"hpAverageSimple": true
+			},
+			"activeTabInput": 5,
+			"activeTabOutput": 0,
+			"profBonus": 4,
+			"languages": [
+				"Oriental (Common and High)"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+8",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+7",
+				"acrobatics": "+12"
+			},
+			"ixBrew": 3,
+			"trait": [
+				{
+					"name": "Blink Strike",
+					"entries": [
+						"Once on each of its turns, when attacking with its nodachi, the blademaster can teleport up to 30 feet right before making the attack. The blademaster makes its next attack with advantage, and deals an additional 21 ({@dice 6d6}) with that attack if it connects."
+					]
+				},
+				{
+					"name": "Grace",
+					"entries": [
+						"The kensai cannot suffer from disadvantage when attacking with its ninja-to."
+					]
+				},
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"While the shinobi is wearing no armor and wielding no shield, its AC includes its Charisma modifier."
+					]
+				},
+				{
+					"name": "Weapon Bond",
+					"entries": [
+						"The shinobi can summon its ninja-to into its hand using a bonus action. The shinobi can’t be disarmed of its ninja-to unless {@condition incapacitated}"
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"On each of its turns, the shinobi can use a bonus action to take the Dash, Disengage, or Hide action."
+					]
+				},
+				{
+					"name": "Ninjutsu",
+					"entries": [
+						"The shinobi’s attacks are ki-empowered. When the shinobi hits with its ninja-to, the weapon deals an extra {@dice 2d6} force damage (included in the attack)."
+					]
+				},
+				{
+					"name": "Superior invisibility",
+					"entries": [
+						"As a bonus action, the shinobi can magically turn {@condition invisible} until its concentration ends (as if concentrating on a spell). Any equipment the shinobi wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The blademaster attacks three times in any combination."
+					]
+				},
+				{
+					"name": "Ninja-to",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, plus 7 ({@damage 2d6}) force damage.  If the target is a creature, the shinobi can",
+						"choose one of the following additional effects:",
+						"• The target must succeed a {@dc 16} Constitution saving throw, or lose the ability to make opportunity attacks until the beginning of its next turn.",
+						"• The target must succeed a {@dc 16} Dexterity saving throw, or have its speed halved until the beginning of the shinobi’s next turn."
+					]
+				},
+				{
+					"name": "Ki Shuriken {@recharge 5}",
+					"entries": [
+						"A line of pure spiritual energies 5 feet wide and 30 feet long bursts from the shinobi’s ninja-to. Each creature in the line must make a {@dc 16} Dexterity saving throw. A creature takes 18 force damage on a failed save, or 9  damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"group": "NPCs",
+			"environment": [
+				"urban"
+			],
+			"tokenUrl": "https://the-nusbaum.github.io/img/MotO/shinobi.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://the-nusbaum.github.io/img/MotO/shinobi.png"
+						}
+					}
+				]
+			},
+			"isNpc": true
+		},
+		{
+			"name": "Kage",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "MonstersoftheOrient",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "6d8"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 20,
+				"canHover": false
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"investigation": "+5",
+				"perception": "+6",
+				"persuasion": "+5",
+				"sleight of hand": "+5",
+				"stealth": "+5",
+				"athletics": "+4",
+				"acrobatics": "+8"
+			},
+			"passive": 16,
+			"languages": [
+				"any two languages"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"On each of its turns, the Kage can use a bonus action to take the Dash, Disengage, or Hide action."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The Kage deals an extra 7 ({@dice 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't {@condition incapacitated} and the spy doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Wind Runner",
+					"entries": [
+						"The wind carries the kage aloft. The Kage has a flying speed of",
+						"20 feet. This benefit works only in short bursts; the kage will fall if they end their turn",
+						"in the air and nothing else is holding them aloft."
+					]
+				},
+				{
+					"name": "A Thousand Faces",
+					"entries": [
+						"The Kage has the ability to cast alter self at will, without ex-",
+						"pending a spell slot."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Kage makes two melee attacks."
+					]
+				},
+				{
+					"name": "Ninja-to",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Hankyu",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"page": 349,
+			"altArt": [
+				{
+					"name": "Vistana Spy",
+					"source": "CoS"
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"otherSources": [
+				{
+					"source": "CoS"
+				},
+				{
+					"source": "HotDQ"
+				},
+				{
+					"source": "PotA"
+				},
+				{
+					"source": "SKT"
+				},
+				{
+					"source": "ToA"
+				},
+				{
+					"source": "WDH"
+				},
+				{
+					"source": "WDMM"
+				}
+			],
+			"profSave": {},
+			"profSkill": {
+				"athletics": 2,
+				"acrobatics": 2
+			},
+			"autoCalc": {},
+			"activeTabInput": 5,
+			"activeTabOutput": 2,
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Shadow spies, also called Kage, are trained to blend into their surroundings, to observe and remember the smallest details about an opposing force, and to run like the wind to bring a report back alive. The best Kage are members of the Spider Clan."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://the-nusbaum.github.io/img/MotO/kage.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://the-nusbaum.github.io/img/MotO/kage.png",
+			"group": "NPCs",
+			"isNpc": true,
+			"alias": [
+				"Shadow Spy"
+			]
+		},
+		{
+			"name": "Shogun",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "MonstersoftheOrient",
+			"otherSources": [
+				{
+					"source": "WDMM"
+				},
+				{
+					"source": "TftYP"
+				},
+				{
+					"source": "ToA"
+				}
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"Great Armor and Defense Style"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d8 + 55",
+				"average": 143
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"str": "+9",
+				"con": "+6"
+			},
+			"skill": {
+				"intimidation": "+9",
+				"perception": "+8",
+				"athletics": "+10",
+				"persuasion": "+9",
+				"insight": "+8",
+				"animal handling": "+8"
+			},
+			"passive": 16,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Imposing Authority",
+					"entries": [
+						"The Shogun has advantage on all Charisma (persuasion) and Charisma (intimidation) checks, as long as they have at least one ally within 10 feet."
+					]
+				},
+				{
+					"name": "Watchful Companion",
+					"entries": [
+						"The shogun has a Hawk companion. It will soar high above the shogun when commanded to do so, but needs at least 8 hours of sleep every day, along with food and water. While the Hawk is in the air, up to a range of 100 feet, it grants the shogun its vision",
+						"through a telepathic bond. It’s hit points equal half the shoguns hit points."
+					]
+				},
+				{
+					"name": "Might {@recharge 5}",
+					"entries": [
+						"On of the Shogun's allies who can see and hear them must make an attack, with advantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The champion makes three attacks with its Nodachi"
+					]
+				},
+				{
+					"name": "Nodachi",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage, plus 7 ({@damage 2d6}) slashing damage if the shogun has more than half of its total hit points remaining."
+					]
+				}
+			],
+			"page": 212,
+			"environment": [
+				"desert",
+				"urban"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://the-nusbaum.github.io/img/MotO/shogun.png"
+						}
+					}
+				]
+			},
+			"profSave": {},
+			"profSkill": {
+				"athletics": 1,
+				"intimidation": 1,
+				"perception": 1,
+				"persuasion": 1,
+				"insight": 1,
+				"animal handling": 1
+			},
+			"autoCalc": {
+				"proficiency": false,
+				"hpAverageSimple": true
+			},
+			"activeTabInput": 5,
+			"activeTabOutput": 2,
+			"profBonus": 6,
+			"reaction": [
+				{
+					"name": "Beacon {@recharge 5}",
+					"entries": [
+						"when an allied creature within 30 feet of the shogun fails a saving throw, the creature may reroll the save, but must accept the second result."
+					]
+				}
+			],
+			"isNpc": true,
+			"group": "NPCs",
+			"tokenUrl": "https://the-nusbaum.github.io/img/MotO/shogun.png"
+		}
+	]
+}
